@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myobj={
+            name:"amith",
+            age:25,
+            place:"newyork"
+        }
+
+        //with stringify
+        var myjson=JSON.stringify(myobj);
+        console.log(typeof myjson);
+        console.log(myjson);
+        document.write(myjson);
+        //with parse() method
+        var parsi=JSON.parse(myjson);
+        console.log(typeof parsi);
+        console.log(parsi);
+        document.write(myjson);
+        
+        </script>
+</body>
+</html>

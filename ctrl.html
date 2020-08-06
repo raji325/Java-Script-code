@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fruits=["Mango","Apple","Orange","peach"];
+        for(var i=0;i<=fruits.length-1;i++)
+    {
+        console.log(fruits[i]);
+        console.log("for loop executed");
+    }
+        //for each
+    var fruits=["Mango","Apple","Orange","peach"];
+    fruits.forEach(function(fruits,index)
+    { 
+        console.log(index);
+        console.log(fruits);
+    });
+
+
+//for of loop
+var fruits=["Mango","Apple","Orange","peach"];
+for(var test of fruits)
+{
+    console.log("this is",test);
+}
+
+//for in loop
+var fruits=["Mango","Apple","Orange","peach"];
+for(var demo in fruits)
+{
+    console.log("the for in values are",demo);//it stores only indexes
+    console.log(fruits[demo]);//it stores both values and index
+}
+
+
+//for in loop(for objects)
+var person={
+name:'Raji',
+age:23,
+company:'capgemini'
+}
+for(var key in person)
+{
+    console.log("key is",key);//it retrieves the key values
+    console.log("person is",person[key]);//it reterieves both the key and value
+}
+</script>
+    
+</body>
+</html>
